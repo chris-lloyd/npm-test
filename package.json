@@ -1,0 +1,43 @@
+{
+  "name": "@chris-lloyd/npm-test",
+  "version": "1.0.0",
+  "description": "this is a test",
+  "main": "lib/index.js",
+  "module": "lib/index.esm.js",
+  "types": "lib/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "tsc",
+    "rollup": "rollup --config rollup.config.ts --configPlugin @rollup/plugin-typescript",
+    "test": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chris-lloyd/npm-test.git"
+  },
+  "author": "christopher lim chin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chris-lloyd/npm-test/issues"
+  },
+  "homepage": "https://github.com/chris-lloyd/npm-test#readme",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^23.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.0",
+    "@types/react": "^18.0.21",
+    "postcss": "^8.4.18",
+    "react": "^18.2.0",
+    "rollup": "^3.2.3",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "tslib": "^2.4.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/chris-lloyd"
+  }
+}
