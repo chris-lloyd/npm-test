@@ -7,10 +7,7 @@
   "types": "lib/index.d.ts",
   "type": "module",
   "scripts": {
-    "prebuild": "rm -rf dist",
-    "build": "tsc",
-    "rollup": "rollup --config rollup.config.ts --configPlugin @rollup/plugin-typescript",
-    "test": "rollup -c"
+    "build": "rollup -c"
   },
   "repository": {
     "type": "git",
