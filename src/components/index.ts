@@ -7,3 +7,4 @@ export { default as CustomModal } from "./CustomModal";
 export { default as CustomRowTable } from "./CustomRowTable";
 export { default as CustomTextField } from "./CustomTextField";
 export { default as FlexDiv } from "./FlexDiv";
+export { default as CustomLoader } from "./CustomLoader";

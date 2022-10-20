@@ -1,6 +1,6 @@
 {
   "name": "@chris-lloyd/npm-test",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "this is a test",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
